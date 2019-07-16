@@ -1,0 +1,7 @@
+Things I need:
+  8 Servo motors (MG90S) ~ £25 https://www.amazon.co.uk/Keywish-MG90S-Geared-Helicopter-Trex450/dp/B07LG2SWWZ/ref=sr_1_8?keywords=servo+motor&qid=1561316524&s=gateway&sr=8-8
+  8 Servo Horns & screws, metal https://www.amazon.co.uk/Crazepony-UK-Aluminum-Digital-Futaba-Newer-Style/dp/B07HQFJD67/ref=sr_1_7?keywords=servo+horn+metal&qid=1561931482&s=gateway&sr=8-7
+  4 Lower Legs lower_leg.stl
+  4 Upper Legs upper_leg.stl
+  Battery for Servos (28Amp 6V)
+  
