@@ -15,6 +15,6 @@ module lowerleg() {
 
 union() {
     lowerleg();
-    translate([0,0,7]) rotate([0,270,0]) scale([0.1, 0.1, 0.1]) servo();
-    translate([-1.8,0,13]) rotate([0,0,270]) upperleg();
+    translate([0.15,0,6.6]) rotate([0,270,0]) scale([0.1, 0.1, 0.1]) servo();
+    translate([-2,0,10.6]) rotate([0,0,270]) upperleg();
 }

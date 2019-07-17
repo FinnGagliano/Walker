@@ -12,7 +12,7 @@ module 9g_motor(){
 		}
 		translate([10,0,-11]) rotate([0,-30,0]) cube([8,13,4], center=true);
 		for ( hole = [14,-14] ){
-			translate([hole,0,5]) cylinder(r=2.2, h=4, $fn=20, center=true);
+			translate([hole,0,5]) cylinder(r=1, h=4, $fn=20, center=true);
 		}	
 	}
 }
