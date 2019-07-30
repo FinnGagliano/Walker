@@ -4,7 +4,7 @@ module 9g_motor(){
 	difference(){			
 		union(){
 			color("steel blue") cube([23,12.5,22], center=true);
-			color("steel blue") translate([0,0,5]) cube([32,12,2], center=true);
+			color("steel blue") translate([0,0,9]) cube([32,12,2], center=true);
 			color("steel blue") translate([5.5,0,2.75]) cylinder(r=6, h=25.75, $fn=20, center=true);
 			color("steel blue") translate([-.5,0,2.75]) cylinder(r=1, h=25.75, $fn=20, center=true);
 			color("steel blue") translate([-1,0,2.75]) cube([5,5.6,24.5], center=true);		
@@ -12,7 +12,7 @@ module 9g_motor(){
 		}
 		translate([10,0,-11]) rotate([0,-30,0]) cube([8,13,4], center=true);
 		for ( hole = [14,-14] ){
-			translate([hole,0,5]) cylinder(r=1, h=4, $fn=20, center=true);
+			translate([hole,0,9]) cylinder(r=1, h=4, $fn=20, center=true);
 		}	
 	}
 }
