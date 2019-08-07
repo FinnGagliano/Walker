@@ -7,7 +7,7 @@ servo_pins = [17, 27]
 for servo_pin in servo_pins:
     pi.set_mode(servo_pin, pigpio.OUTPUT)
 
-positions = [[45, 0], [0,0]]
+positions = [[45, 0], [0, -45]]
 
 def move_to_angle(pi, pin, angle):
     pwm_range = 2000
