@@ -3,7 +3,7 @@ import pigpio
 import time
 
 pi = pigpio.pi()
-servoPINS = [17, 27, 22]
+servoPINS = [17, 27]
 
 for servoPIN in servoPINS:
     pi.set_mode(servoPIN, pigpio.OUTPUT)
