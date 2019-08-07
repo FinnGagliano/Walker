@@ -26,15 +26,10 @@ try:
             # Each servo
             for j in range(2):
                 move_to_angle(pi, servo_pins[j], positions[i][j])
-            time.sleep(0.5)
-    for servo_pin in servo_pins:
-        pi.set_servo_pulsewidth(servo_pin, 0)
+            time.sleep(0.3)
 except Exception as e:
     print(str(e))
-
     for servo_pin in servo_pins:
-        pi.set_servo_pulsewidth(servo_pin, 1500)
         pi.set_servo_pulsewidth(servo_pin, 0)
-
     time.sleep(1)
     pi.stop()
