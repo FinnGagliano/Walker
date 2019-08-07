@@ -17,6 +17,8 @@ def move_to_angle(pi, pin, angle):
     pi.set_servo_pulsewidth(pin, duty_cycle)
 
 try:
+    for pin in servo_pins:
+        pi.set_servo_pulsewidth(pin, 1500)
     # Each position
     for i in range(2):
         # Each servo
