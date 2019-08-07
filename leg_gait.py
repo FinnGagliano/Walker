@@ -24,6 +24,6 @@ try:
         time.sleep(5)
 except:
     for servo_pin in servo_pins:
-        pi.set_servo_pulsewidth(servoPIN, 0)
+        pi.set_servo_pulsewidth(servo_pin, 0)
     time.sleep(1)
     pi.stop()
