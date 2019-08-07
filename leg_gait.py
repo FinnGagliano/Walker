@@ -26,7 +26,7 @@ try:
             # Each servo
             for j in range(2):
                 move_to_angle(pi, servo_pins[j], positions[i][j])
-            time.sleep(0.3)
+            time.sleep(0.5)
 except Exception as e:
     print(str(e))
     for servo_pin in servo_pins:
