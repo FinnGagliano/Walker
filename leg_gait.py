@@ -39,8 +39,10 @@ except Exception as e:
 
 try:
     while True:
-        move_to_angle(pi, servo_pins[1], 45)
+        move_to_angle(pi, servo_pins[0], 45)
         time.sleep(5)
+        move_to_angle(pi, servo_pins[0], 45)
+
 except Exception as e:
     time.sleep(1)
     print(str(e))
