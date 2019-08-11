@@ -7,7 +7,7 @@ servo_pins = [17, 27]
 for servo_pin in servo_pins:
     pi.set_mode(servo_pin, pigpio.OUTPUT)
 
-positions = [[45, 0], [0, 45]]
+positions = [[0,0], [45, -45]]
 
 def move_to_angle(pi, pin, angle):
     pwm_range = 2000
@@ -17,36 +17,16 @@ def move_to_angle(pi, pin, angle):
     pi.set_servo_pulsewidth(pin, duty_cycle)
 
 
-'''
+
 try:
     while True:
-        for pin in servo_pins:
-            pi.set_servo_pulsewidth(pin, 1500)
-        time.sleep(5)
         # Each position
-        for i in range(2):
+        for position in positions:
             # Each servo
-            for j in range(2):
-                move_to_angle(pi, servo_pins[j], positions[i][j])
+            move_to_angle(pi, servo_pins[1], position[1])
+            move_to_angle(pi, servo_pins[0], position[0])
             time.sleep(5)
 except Exception as e:
-    print(str(e))
-    for servo_pin in servo_pins:
-        pi.set_servo_pulsewidth(servo_pin, 0)
-    time.sleep(1)
-    pi.stop()
-'''
-
-try:
-    while True:
-        move_to_angle(pi, servo_pins[1], -45)
-        move_to_angle(pi, servo_pins[0], 45)
-        time.sleep(5)
-
-
-
-except Exception as e:
-    time.sleep(1)
     print(str(e))
     for servo_pin in servo_pins:
         pi.set_servo_pulsewidth(servo_pin, 0)
