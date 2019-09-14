@@ -2,8 +2,6 @@ module servo() {
     include <9g_servo.scad>;
 }
 
-translate([1.6,1,1]) rotate([0,0,180]) scale([0.1,0.1,0.1]) servo();
-
 union() {
     translate([0,0.25,0]) difference() {
         cube([3.2,1.5,1.8]);
