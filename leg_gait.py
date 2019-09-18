@@ -17,7 +17,6 @@ def move_to_angle(pi, pin, angle):
     pi.set_servo_pulsewidth(pin, duty_cycle)
 
 
-
 try:
     while True:
         # Each position
@@ -25,7 +24,7 @@ try:
             # Each servo
             move_to_angle(pi, servo_pins[1], position[1])
             move_to_angle(pi, servo_pins[0], position[0])
-            time.sleep(5)
+            time.sleep(1)
 except Exception as e:
     print(str(e))
     for servo_pin in servo_pins:
