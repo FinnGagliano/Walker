@@ -1,4 +1,4 @@
-9g_motor();
+color("blue") 9g_motor();
 
 module 9g_motor(){
 	difference(){			

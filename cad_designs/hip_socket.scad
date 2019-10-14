@@ -2,10 +2,13 @@ module servo() {
     include <9g_servo.scad>;
 }
 
+translate([1.6,1,1]) scale([0.1,0.1,0.1]) servo();
+
 union() {
     translate([0,0.25,0]) difference() {
         cube([3.2,1.5,1.8]);
         translate([0.45,0.1,-0.1]) cube([2.3,1.3,2]);
+        translate([0.3,0.1,-0.5]) cube([2.6,1.3,2]);
     }
     translate([3.2,0,]) difference() {
         translate([0,0,-1.8]) cube([1.7,2,3.6]);

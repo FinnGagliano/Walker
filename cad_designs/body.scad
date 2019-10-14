@@ -1,5 +1,5 @@
 difference() {
-    cube([15,30,1], center=true);
+    cube([15,20,1], center=true);
     translate([2.4,2.9,-0.6]) cylinder(r=0.15, h=1.2, $fn=40);
     translate([2.4,-2.9,-0.6]) cylinder(r=0.15, h=1.2, $fn=40);
     translate([-2.4,2.9,-0.6]) cylinder(r=0.15, h=1.2, $fn=40);
