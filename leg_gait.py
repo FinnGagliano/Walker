@@ -16,6 +16,8 @@ def move_to_angle(pi, pin, angle):
     print(str(duty_cycle))
     pi.set_servo_pulsewidth(pin, duty_cycle)
 
+def move_to_angle(legs, angle):
+    gazebo.turn_joint(jpint1, 50)
 
 try:
     while True:
